@@ -1,0 +1,9 @@
+---
+- name: create directory
+  file: path=/etc/cassandra1 state=directory
+  tags:
+   - dir
+- name: copy config to /etc/cassandra1 folder
+  template: src="cassandra.yaml.j2" dest="/etc/cassandra1/cassandra.yaml"
+  tags:
+   - configpush

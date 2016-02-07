@@ -1,2 +1,12 @@
-[cassandra]
-localhost
+[cassandra:children]
+raliegh
+windward
+
+[raliegh]
+audit_node1
+audit_node2
+
+[windward]
+knowledge_node1
+knowledge_node2
+

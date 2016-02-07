@@ -1,0 +1,9 @@
+---
+- name: java repository add
+  shell: sudo add-apt-repository ppa:webupd8team/java
+- name: update all repositories
+  shell: sudo apt-get update
+- name: install Java 8
+  shell: sudo apt-get install oracle-java8-set-default
+- name: java version verify
+  shell: java -version
